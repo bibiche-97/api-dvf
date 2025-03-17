@@ -5,7 +5,7 @@ from joblib import load
 import pandas as pd
 from getdvf import download_file
 
-download_file("https://minio.lab.sspcloud.fr/projet-formation/diffusion/python-datascientist/pipe.joblib", 'pipe.joblib')
+# download_file("https://minio.lab.sspcloud.fr/projet-formation/diffusion/python-datascientist/pipe.joblib", 'pipe.joblib')
 model = load('pipe.joblib')
 
 app = FastAPI(

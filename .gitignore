@@ -1,0 +1,7 @@
+.venv/
+.venv
+.env
+pipe.joblib
+*.parquet
+
+__py*__

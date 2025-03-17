@@ -26,7 +26,7 @@ def pipeline_define(data):
     )
     transformer = make_column_transformer(
         (numeric_pipeline, numeric_features),
-        (OneHotEncoder(sparse = False, handle_unknown = "ignore"), categorical_features))
+        (OneHotEncoder(handle_unknown = "ignore"), categorical_features))
     
     pipe = Pipeline(steps=[('preprocessor', transformer),
                           ('boosting', reg)])
